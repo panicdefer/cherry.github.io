@@ -183,7 +183,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -193,7 +193,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -226,175 +226,6 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/06/arch/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="PanicDefer">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="PanicDefer">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="PanicDefer" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/07/06/arch/" itemprop="url">
-                  架构解决方案
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-06T08:46:22+08:00">
-                2017-07-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="关于架构目标"><a href="#关于架构目标" class="headerlink" title="关于架构目标"></a>关于架构目标</h2><ul>
-<li>战略、产品线</li>
-<li>具体策略（战术）</li>
-</ul>
-<h2 id="需求讨论及分析"><a href="#需求讨论及分析" class="headerlink" title="需求讨论及分析"></a>需求讨论及分析</h2><ul>
-<li>根据与文总的讨论分析，从逻辑上可以将该产品的技术架构分为云平台、各类设备终端、手机终端。<ul>
-<li>通过采集终端设备的数据，并与云平台通信，然后存储采集数据到云平台，进行相应的分析，具有相关权限的人可以通过可视化界面实时观测设备运行状况</li>
-<li>通过手机与云平台通信，发送控制指令，然后云平台发送指令来控制各种设备，从而控制智能设备，实现智能化</li>
-</ul>
-</li>
-<li>业务需求    <ul>
-<li>可视化智能网管，全网设备同意管理</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>性能需求<ul>
-<li>高性能，高可靠，高安全</li>
-</ul>
-</li>
-</ul>
-<h2 id="技术架构"><a href="#技术架构" class="headerlink" title="技术架构"></a>技术架构</h2><ul>
-<li>整体架构<br> <img src="/img/zongti.png" alt="zongti">  </li>
-<li>系统组件<br> <img src="/img/system.png" alt="system"></li>
-<li>逻辑架构<br> <img src="/img/arc.png" alt="arc"></li>
-<li>逻辑架构说明<ul>
-<li>黑色➡️代表采集的数据流动方向</li>
-<li>红色➡️代表用户查询数据流动方向</li>
-<li>逻辑架构图分数据采集架构（及黑色箭头部分）和监控分析平台（红色箭头部分）</li>
-<li>数据分析可以利用阿里云海量分析中间件</li>
-</ul>
-</li>
-</ul>
-<h2 id="非功能性设计"><a href="#非功能性设计" class="headerlink" title="非功能性设计"></a>非功能性设计</h2><ul>
-<li>系统的承载能力 <ul>
-<li>单个数据采集网关支持3-4万并发等</li>
-</ul>
-</li>
-<li>灵活扩展 <ul>
-<li>支持模块功能动态扩展，灵活扩展基础架构资源</li>
-</ul>
-</li>
-<li>支持多种设备协议<ul>
-<li>可以灵活扩展不同的设备   </li>
-</ul>
-</li>
-</ul>
-<h2 id="安全设计"><a href="#安全设计" class="headerlink" title="安全设计"></a>安全设计</h2><ul>
-<li>数据采集传输过程中没有加密（考虑身份验证和会话令牌）</li>
-<li>敏感数据的泄露等</li>
-<li>通信劫持</li>
-<li>api攻击</li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
     
       
 
@@ -444,8 +275,8 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-06T00:04:34+08:00">
+              <span class="post-meta-item-text">Posted on</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-06T09:04:32+08:00">
                 2017-07-06
               </time>
             
@@ -601,6 +432,173 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/06/arch/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="PanicDefer">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="PanicDefer">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="PanicDefer" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/07/06/arch/" itemprop="url">
+                  架构解决方案
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-06T09:03:23+08:00">
+                2017-07-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="关于架构目标"><a href="#关于架构目标" class="headerlink" title="关于架构目标"></a>关于架构目标</h2><ul>
+<li>战略、产品线</li>
+<li>具体策略（战术）</li>
+</ul>
+<h2 id="需求讨论及分析"><a href="#需求讨论及分析" class="headerlink" title="需求讨论及分析"></a>需求讨论及分析</h2><ul>
+<li>根据与文总的讨论分析，从逻辑上可以将该产品的技术架构分为云平台、各类设备终端、手机终端。<ul>
+<li>通过采集终端设备的数据，并与云平台通信，然后存储采集数据到云平台，进行相应的分析，具有相关权限的人可以通过可视化界面实时观测设备运行状况</li>
+<li>通过手机与云平台通信，发送控制指令，然后云平台发送指令来控制各种设备，从而控制智能设备，实现智能化</li>
+</ul>
+</li>
+<li>业务需求    <ul>
+<li>可视化智能网管，全网设备同意管理</li>
+</ul>
+</li>
+<li>性能需求<ul>
+<li>高性能，高可靠，高安全</li>
+</ul>
+</li>
+</ul>
+<h2 id="技术架构"><a href="#技术架构" class="headerlink" title="技术架构"></a>技术架构</h2><ul>
+<li>整体架构<br> <img src="/img/zongti.png" alt="zongti">  </li>
+<li>系统组件<br> <img src="/img/system.png" alt="system"></li>
+<li>逻辑架构<br> <img src="/img/arc.png" alt="arc"></li>
+<li>逻辑架构说明<ul>
+<li>黑色➡️代表采集的数据流动方向</li>
+<li>红色➡️代表用户查询数据流动方向</li>
+<li>逻辑架构图分数据采集架构（及黑色箭头部分）和监控分析平台（红色箭头部分）</li>
+<li>数据分析可以利用阿里云海量分析中间件</li>
+</ul>
+</li>
+</ul>
+<h2 id="非功能性设计"><a href="#非功能性设计" class="headerlink" title="非功能性设计"></a>非功能性设计</h2><ul>
+<li>系统的承载能力 <ul>
+<li>单个数据采集网关支持3-4万并发等</li>
+</ul>
+</li>
+<li>灵活扩展 <ul>
+<li>支持模块功能动态扩展，灵活扩展基础架构资源</li>
+</ul>
+</li>
+<li>支持多种设备协议<ul>
+<li>可以灵活扩展不同的设备   </li>
+</ul>
+</li>
+</ul>
+<h2 id="安全设计"><a href="#安全设计" class="headerlink" title="安全设计"></a>安全设计</h2><ul>
+<li>数据采集传输过程中没有加密（考虑身份验证和会话令牌）</li>
+<li>敏感数据的泄露等</li>
+<li>通信劫持</li>
+<li>api攻击</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/20/hello-world/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -640,7 +638,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
+              <span class="post-meta-item-text">Posted on</span>
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-20T09:04:07+08:00">
                 2017-05-20
               </time>
@@ -778,7 +776,7 @@
           <div class="site-state-item site-state-posts">
             <a href="/archives">
               <span class="site-state-item-count">3</span>
-              <span class="site-state-item-name">Artikel</span>
+              <span class="site-state-item-name">posts</span>
             </a>
           </div>
 
@@ -829,7 +827,7 @@
 
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
