@@ -276,7 +276,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Veröffentlicht am</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-06T00:14:16+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-06T08:46:22+08:00">
                 2017-07-06
               </time>
             
@@ -319,32 +319,24 @@
 <li>具体策略（战术）</li>
 </ul>
 <h2 id="需求讨论及分析"><a href="#需求讨论及分析" class="headerlink" title="需求讨论及分析"></a>需求讨论及分析</h2><ul>
-<li><p>根据与文总的讨论分析，从逻辑上可以将该产品的技术架构分为云平台、各类设备终端、手机终端。</p>
-<ul>
+<li>根据与文总的讨论分析，从逻辑上可以将该产品的技术架构分为云平台、各类设备终端、手机终端。<ul>
 <li>通过采集终端设备的数据，并与云平台通信，然后存储采集数据到云平台，进行相应的分析，具有相关权限的人可以通过可视化界面实时观测设备运行状况</li>
 <li>通过手机与云平台通信，发送控制指令，然后云平台发送指令来控制各种设备，从而控制智能设备，实现智能化</li>
 </ul>
 </li>
-<li><p>业务需求</p>
-<ul>
-<li>可视化智能网管，全网设备同意管理</li>
+<li>业务需求    <ul>
+<li>可视化智能网管，全网设备同意管理<ul>
+<li>性能需求</li>
 </ul>
 </li>
-</ul>
-<ul>
-<li><p>性能需求</p>
-<ul>
 <li>高性能，高可靠，高安全</li>
 </ul>
 </li>
 </ul>
 <h2 id="技术架构"><a href="#技术架构" class="headerlink" title="技术架构"></a>技术架构</h2><ul>
-<li><p>整体架构<br> <img src="/img/zongti.png" alt="zongti"></p>
-</li>
-<li><p>系统组件<br> <img src="/img/system.png" alt="system"></p>
-</li>
-<li><p>逻辑架构<br> <img src="/img/arc.png" alt="arc"></p>
-</li>
+<li>整体架构<br> <img src="/img/zongti.png" alt="zongti">  </li>
+<li>系统组件<br> <img src="/img/system.png" alt="system"></li>
+<li>逻辑架构<br> <img src="/img/arc.png" alt="arc"></li>
 <li>逻辑架构说明<ul>
 <li>黑色➡️代表采集的数据流动方向</li>
 <li>红色➡️代表用户查询数据流动方向</li>
@@ -353,7 +345,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="非功能性设计"><a href="#非功能性设计" class="headerlink" title="非功能性设计"></a>非功能性设计</h3><ul>
+<h2 id="非功能性设计"><a href="#非功能性设计" class="headerlink" title="非功能性设计"></a>非功能性设计</h2><ul>
 <li>系统的承载能力 <ul>
 <li>单个数据采集网关支持3-4万并发等</li>
 </ul>
@@ -363,11 +355,11 @@
 </ul>
 </li>
 <li>支持多种设备协议<ul>
-<li>可以灵活扩展不同的设备</li>
+<li>可以灵活扩展不同的设备   </li>
 </ul>
 </li>
 </ul>
-<h3 id="安全设计"><a href="#安全设计" class="headerlink" title="安全设计"></a>安全设计</h3><ul>
+<h2 id="安全设计"><a href="#安全设计" class="headerlink" title="安全设计"></a>安全设计</h2><ul>
 <li>数据采集传输过程中没有加密（考虑身份验证和会话令牌）</li>
 <li>敏感数据的泄露等</li>
 <li>通信劫持</li>
@@ -490,35 +482,26 @@
         
           
             <h2 id="初创团队的构建："><a href="#初创团队的构建：" class="headerlink" title="初创团队的构建："></a>初创团队的构建：</h2><ul>
-<li><p>核心成员</p>
-<ul>
-<li>CTO：负责产品未来总体发展方向，擅长营销和销售。</li>
-<li>架构师：用编码将想法变成现实产品。</li>
+<li>核心成员<pre><code>- CTO：负责产品未来总体发展方向，擅长营销和销售。
+</code></pre><ul>
+<li>架构师：用编码将想法变成现实产品。<ul>
 <li>设计师：让代码产品看上去更有吸引力。</li>
 </ul>
 </li>
-<li><p>研发团队人员两大原则</p>
-<ul>
-<li>初创企业招人总原则：喜欢日常挑战性工作、能够适应高节奏、有组织性的纷杂工作氛围、并且个人独立工作与团队协作同样高效</li>
-<li>创立团队之初，一定按岗位职责招人</li>
 </ul>
 </li>
-<li><p>团队的责权利：</p>
-<ul>
-<li>在有限的时间和条件下，达到产品的预期结果就是责任</li>
-<li>有权就有责任的担当，要有吃得苦和受得了委屈的心理素质</li>
-<li>又相应的鼓励机制</li>
-</ul>
-</li>
-<li><p>人才渠道</p>
-<ul>
-<li>内部推荐</li>
-<li>招聘网</li>
-<li>其它</li>
-</ul>
-</li>
-<li><p>目前需要招的候选人</p>
-<ul>
+<li>研发团队人员两大原则<pre><code>- 初创企业招人总原则：喜欢日常挑战性工作、能够适应高节奏、有组织性的纷杂工作氛围、并且个人独立工作与团队协作同样高效
+- 创立团队之初，一定按岗位职责招人  
+</code></pre></li>
+<li>团队的责权利：<pre><code>- 在有限的时间和条件下，达到产品的预期结果就是责任
+- 有权就有责任的担当，要有吃得苦和受得了委屈的心理素质
+- 又相应的鼓励机制
+</code></pre></li>
+<li>人才渠道<pre><code>-  内部推荐
+-  招聘网
+-  其它 
+</code></pre></li>
+<li>目前需要招的候选人<ul>
 <li>大数据开发工程师</li>
 <li>android 和 ios</li>
 </ul>
@@ -562,7 +545,9 @@
 </ul>
 </li>
 </ul>
-<h2 id="初创团队经验"><a href="#初创团队经验" class="headerlink" title="初创团队经验"></a>初创团队经验</h2><p>   根据团队能力量体裁衣，技术简单化，利用开源和成熟的产品，业务与基础设施适当的平衡和取舍，，系统先做出来，抢占市场入口，人员需要充分沟通，让团队成员理解一直，然后要有很强的执行力。</p>
+<h2 id="初创团队经验"><a href="#初创团队经验" class="headerlink" title="初创团队经验"></a>初创团队经验</h2><ul>
+<li>根据团队能力量体裁衣，技术简单化，利用开源和成熟的产品，业务与基础设施适当的平衡和取舍，，系统先做出来，抢占市场入口，人员需要充分沟通，让团队成员理解一直，然后要有很强的执行力。</li>
+</ul>
 
           
         
